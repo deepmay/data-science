@@ -9,7 +9,7 @@ Contents:
     1. [If you're working on your own project](#if-youre-working-on-your-own-project)
     1. [If you're working on a team](#if-youre-working-on-a-team)
     1. [Forking](#forking)
-1. [Fixing Things](#fixing-things)
+    1. [Fixing Things](#fixing-things)
 1. [Best Practices](#best-practices)
 
 ## What's Git, and why use it?
@@ -205,7 +205,7 @@ that, you can navigate to that repo on GitHub or GitLab, then click the "Fork"
 button on the upper right
 
 
-## Fixing Things
+### Fixing Things
 You might (probably will, tbh) end up committing something you didn't want to.
 If you just need to revert back to your previous commit, you can reset the
 branch you're on by one using `git reset HEAD~`.
