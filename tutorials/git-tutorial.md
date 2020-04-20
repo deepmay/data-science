@@ -25,23 +25,23 @@ Before starting this tutorial, you'll need a few things:
 - A GitHub or GitLab account
 - EITHER:
   1. A computer terminal pulled up and Git installed:
-    - Protip: You can check if a program `X` is installed with `which X`, which
-      should return something like `/usr/bin/git` on Mac or Linux, so you could
-      do `which brew` and `which git` to check if you have either installed.
-    - Mac:
-      - Open the `Terminal` app
-      - First install [Homebrew](https://brew.sh/)
-      - Then install Git:
-        - `brew install git`
-    - Ubuntu:
-      - Open the `Terminal` app
-      - Install Git (if you don't have it):
-          - `sudo apt install git`
-    - Windows:
-      - Set up [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) (WSL) and install Ubuntu
-      - Open the WSL app (might also be called "bash")
-      - Install Git (if you don't have it):
-          - `sudo apt install git`
+      - Protip: You can check if a program `X` is installed with `which X`, which
+        should return something like `/usr/bin/git` on Mac or Linux, so you could
+        do `which brew` and `which git` to check if you have either installed.
+      - Mac:
+        - Open the `Terminal` app
+        - First install [Homebrew](https://brew.sh/)
+        - Then install Git:
+          - `brew install git`
+      - Ubuntu:
+        - Open the `Terminal` app
+        - Install Git (if you don't have it):
+            - `sudo apt install git`
+      - Windows:
+        - Set up [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) (WSL) and install Ubuntu
+        - Open the WSL app (might also be called "bash")
+        - Install Git (if you don't have it):
+            - `sudo apt install git`
   1. [GitHub Desktop](https://desktop.github.com/) 
     - This makes it easy to use Git if you're not interested in using the command line, or if you prefer graphical user interfaces (GUI's)
     - TODO
