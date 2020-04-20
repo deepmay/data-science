@@ -67,8 +67,7 @@ put it into a terminal verbatim, based on the use case. Placeholders look
 ### If you're backing up your own project
 If you're backing up your own project, you might not need different branches at
 all - I'll assume that's the case here. If you'd like to learn more about
-branches, check out the section about [working on a team](#If you're working on
-a team).
+branches, check out the section about [working on a team](#if-youre-working-on-a-team).
 
 #### Starting a project
 Before you get started working on your project, you should figure out where you
