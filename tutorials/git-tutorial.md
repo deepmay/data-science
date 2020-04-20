@@ -2,6 +2,7 @@
 By Audrey Beard
 
 Contents:
+1. [Cheat Sheet](#cheat-sheet)
 1. [What's Git, and why use it?](#whats-git-and-why-use-it)
 1. [Using it](#using-it)
     1. [Prerequisites](#prerequisites)
@@ -9,8 +10,23 @@ Contents:
     1. [If you're working on your own project](#if-youre-working-on-your-own-project)
     1. [If you're working on a team](#if-youre-working-on-a-team)
     1. [Forking](#forking)
-1. [Fixing Things](#fixing-things)
+    1. [Fixing Things](#fixing-things)
 1. [Best Practices](#best-practices)
+
+## Cheat Sheet
+Below you'll find all of the most common commands you'll use on a day-to-day basis
+
+Command | Example | Use Case
+--------|---------|---------
+`pull` | `git pull` | Fetches new changes from remote branch (on GitHub/GitLab), AND updates current branch (on PC)
+`clone` | `git clone <YOUR_URL>` | Clones a repository from `<YOUR_URL>` onto your local machine
+`add` | `git add <FILE_OR_FILES_OR_DIR>` | Tells Git to track changes in `<FILE_OR_FILES_OR_DIR>`. Can supply one file, multiple files, or a directory (like `.` or `..` or `./dir`)
+`commit` | `git commit -m “<MESSAGE>”` | Commits your changes to the official record. This is the smallest chunk of time/changes that Git knows, so it’s valuable to commit often
+`push` | `git push` Pushes your local commits to the remote (GitHub/GitLab). If this is your first time pushing a new branch, you’ll have to add `--set-upstream origin <BRANCH>`
+`branch` | `git branch <BRANCH>` | Creates a new branch. If you just want to see which branches exist on your machine, leave off `<BRANCH>`
+`checkout` | `git checkout <BRANCH>` | Checks out a specified branch
+`status` | `git status` | Displays various statuses, like untracked files or uncommitted changes
+`merge` | `git merge <OTHER_BRANCH> -m “<MESSAGE>”` Merge changes from `<OTHER_BRANCH>` to your current branch and commits. Adds `<MESSAGE>` to commit
 
 ## What's Git, and why use it?
 Git is a version control system, or VCS. If you've used G--gle Docs before and
@@ -205,7 +221,7 @@ that, you can navigate to that repo on GitHub or GitLab, then click the "Fork"
 button on the upper right
 
 
-## Fixing Things
+### Fixing Things
 You might (probably will, tbh) end up committing something you didn't want to.
 If you just need to revert back to your previous commit, you can reset the
 branch you're on by one using `git reset HEAD~`.
