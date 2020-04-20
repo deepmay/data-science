@@ -22,11 +22,11 @@ Command | Example | Use Case
 `clone` | `git clone <YOUR_URL>` | Clones a repository from `<YOUR_URL>` onto your local machine
 `add` | `git add <FILE_OR_FILES_OR_DIR>` | Tells Git to track changes in `<FILE_OR_FILES_OR_DIR>`. Can supply one file, multiple files, or a directory (like `.` or `..` or `./dir`)
 `commit` | `git commit -m “<MESSAGE>”` | Commits your changes to the official record. This is the smallest chunk of time/changes that Git knows, so it’s valuable to commit often
-`push` | `git push` Pushes your local commits to the remote (GitHub/GitLab). If this is your first time pushing a new branch, you’ll have to add `--set-upstream origin <BRANCH>`
+`push` | `git push` | Pushes your local commits to the remote (GitHub/GitLab). If this is your first time pushing a new branch, you’ll have to add `--set-upstream origin <BRANCH>`
 `branch` | `git branch <BRANCH>` | Creates a new branch. If you just want to see which branches exist on your machine, leave off `<BRANCH>`
 `checkout` | `git checkout <BRANCH>` | Checks out a specified branch
 `status` | `git status` | Displays various statuses, like untracked files or uncommitted changes
-`merge` | `git merge <OTHER_BRANCH> -m “<MESSAGE>”` Merge changes from `<OTHER_BRANCH>` to your current branch and commits. Adds `<MESSAGE>` to commit
+`merge` | `git merge <OTHER_BRANCH> -m “<MESSAGE>”` | Merge changes from `<OTHER_BRANCH>` to your current branch and commits. Adds `<MESSAGE>` to commit
 
 ## What's Git, and why use it?
 Git is a version control system, or VCS. If you've used G--gle Docs before and
