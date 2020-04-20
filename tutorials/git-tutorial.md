@@ -43,19 +43,19 @@ Before starting this tutorial, you'll need a few things:
         - Install Git (if you don't have it):
             - `sudo apt install git`
   1. [GitHub Desktop](https://desktop.github.com/) 
-    - This makes it easy to use Git if you're not interested in using the command line, or if you prefer graphical user interfaces (GUI's)
-    - TODO
+      - This makes it easy to use Git if you're not interested in using the command line, or if you prefer graphical user interfaces (GUI's)
+      - TODO
 
 ### Overview
-The way I usually use Git follows the pattern of "`pull`, make changes, `commit`, `push`." That is:
+The way I usually use Git follows the pattern of "pull, make changes, commit, push." That is:
 
 1. `pull`
-  - update your local code (on the current branch) with the remote machine's code on the same branch (we'll get to branches later)
+    - update your local code (on the current branch) with the remote machine's code on the same branch (we'll get to branches later)
 2. Make changes on your own machine, do some testing, throw a brick, etc.
 3. `commit`
-  - When you've finished working on something (a feature, a chapter, a piece, whatever) `commit` it to Git's log - this lets you come back to it later
+    - When you've finished working on something (a feature, a chapter, a piece, whatever) `commit` it to Git's log - this lets you come back to it later
 4. `push`
-  - send your local `commit`s to the remote `master` branch (often on GitHub or GitLab)
+    - send your local `commit`s to the remote `master` branch (often on GitHub or GitLab)
 
 This is the general workflow, but your usage could be different depending on
 whether you're collaborating, what your role is, and what you want to do.
@@ -75,7 +75,7 @@ Before you get started working on your project, you should figure out where you
 want to host it (i.e. where you back it up, and publish it if you make it public).
 1. Create a repo on the site, like GitHub.com or GitLab.com (only need to do this once)
 1. In a terminal, clone the repo to your machine, wherever you want it (only need to do this once):
-  - `git clone <YOUR_REPO_URL>`
+    - `git clone <YOUR_REPO_URL>`
 
 #### Working on a project on one computer
 This is the simplest use case -- you're only doing work on one machine, so
@@ -83,12 +83,12 @@ you're using a Git site purely as a backup and/or portfolio:
 
 1. Create your files, make your changes, etc.
 1. Add any files to Git that aren't already added:
-  - `git add <YOUR_FILE_NAME> <YOUR_NEXT_FILES_OPTIONALLY>`
-  - Alternatively, track everything in this directory with `git add .`
+    - `git add <YOUR_FILE_NAME> <YOUR_NEXT_FILES_OPTIONALLY>`
+    - Alternatively, track everything in this directory with `git add .`
 1. Commit your changes so you can keep track of it (and revert if you mess something up):
-  - `git commit -am <YOUR_COMMIT_MESSAGE_WITH_QUOTES>`
+    - `git commit -am <YOUR_COMMIT_MESSAGE_WITH_QUOTES>`
 1. Push your changes to the remote repository
-  - `git push` 
+    - `git push` 
 
 #### Working on a project on multiple computers
 Using Git with multiple computers is really where the `pull`-`push` pattern
@@ -96,14 +96,14 @@ comes into play. In short, always pull new changes onto your local machine
 before pushing, and always push your changes if you know you're going to be
 working on a different machine later.
 1. Pull any remote updates into your local `master` branch:
-  - `git pull`
+    - `git pull`
 1. Create your files, make your changes, etc.
 1. Add any files to Git that aren't already added:
-  - `git add <YOUR_FILE_NAME> <YOUR_NEXT_FILES_OPTIONALLY>`
+    - `git add <YOUR_FILE_NAME> <YOUR_NEXT_FILES_OPTIONALLY>`
 1. Commit all your changes so you can keep track of it (and revert if you mess something up):
-  - `git commit -am <YOUR_COMMIT_MESSAGE_WITH_QUOTES>`
+    - `git commit -am <YOUR_COMMIT_MESSAGE_WITH_QUOTES>`
 1. Push your changes to the remote repository
-  - `git push` 
+    - `git push` 
 
 ### If you're working on a team
 Generally, if you're working on a team, you each have your own branch (or maybe more). Different teams have different protocols for updating the `master` branch, and I'll address some of those here.
@@ -113,19 +113,19 @@ Before you do anything, you'll need to get the code and probably make your own
 branch. This makes it easier to track and merge changes, especially if two
 people work on the same file (which risks merge conflicts).
 1. Clone the repo from remote to your local machine
-  - `git clone <YOUR_REPO_URL>`
+    - `git clone <YOUR_REPO_URL>`
 1. Create a new branch on your machine
-  - `git branch <YOUR_BRANCH_NAME>`
+    - `git branch <YOUR_BRANCH_NAME>`
 1. Check out that branch
-  - `git checkout <YOUR_BRANCH_NAME>`
+    - `git checkout <YOUR_BRANCH_NAME>`
 1. Make some changes to your branch
 1. Track all new changes in this directory (AKA folder)
-  - `git add <YOUR_FILE_NAME> <YOUR_NEXT_FILES_OPTIONALLY>`
-  - Alternatively, track everything in this directory with `git add .`
+    - `git add <YOUR_FILE_NAME> <YOUR_NEXT_FILES_OPTIONALLY>`
+    - Alternatively, track everything in this directory with `git add .`
 1. Commit those changes to Git’s working tree
-  - `git commit -am <YOUR_COMMIT_MESSAGE_WITH_QUOTES>`
+    - `git commit -am <YOUR_COMMIT_MESSAGE_WITH_QUOTES>`
 1. Push your branch to remote by setting the upstream branch
-  - `git push --set-upstream origin <YOUR_BRANCH_NAME>`
+    - `git push --set-upstream origin <YOUR_BRANCH_NAME>`
 
 
 #### Working on an existing branch, making unrelated changes
@@ -134,22 +134,22 @@ make a few unrelated changes, you probably want to give each major change a
 meaningful commit message. Note that this part of the tutorial shouldn't be
 entered verbatim, but shows an example instead:
 1. Make sure you’re on your branch
-  - `git checkout <YOUR_BRANCH>`
+    - `git checkout <YOUR_BRANCH>`
 1. Make sure your branch is up-to-date:
-  - `git pull`
+    - `git pull`
 1. Make changes to some file (`seize_the_means.py`)
 1. Add those changes to the to-be-committed list
-  - `git add seize_the_means.py`
+    - `git add seize_the_means.py`
 1. Write new commit message for clarity, accountability, and easy fixes if
    something breaks. Use a meaningful commit message, like this example!
-  - `git commit -m “wrote multiprocessing function to unite the workers”`
+    - `git commit -m “wrote multiprocessing function to unite the workers”`
 1. Suppose now we deleted a file that we don't actually need (`landlords.py`)
 1. Remove that file from Git’s tracking
-  - `git rm landlords.py`
+    - `git rm landlords.py`
 1. Commit that change, giving it a meaningful commit message
-  - `git commit -m “decided to cancel rent”`
+    - `git commit -m “decided to cancel rent”`
 1. Push all your changes from local to remote
-  - `git push`
+    - `git push`
 
 
 #### Existing branch, merging changes from another branch
@@ -159,34 +159,34 @@ local development branch with updates from a different branch. Note that I also
 am using example commit messages and file names here, so don't copy that
 verbatim:
 1. Check out other branch
-  - `git checkout <OTHER_BRANCH>`
+    - `git checkout <OTHER_BRANCH>`
 1. Pull remote changes into local machine
-  - `git pull`
+    - `git pull`
 1. Switch back to your branch
-  - `git checkout <YOUR_BRANCH>`
+    - `git checkout <YOUR_BRANCH>`
 1. Make sure your branch is up-to-date:
-  - `git pull`
+    - `git pull`
 1. Merge other branch into your branch. Use meaningful commit message!
-  - `git merge <OTHER_BRANCH> -m “bring in Lamya's bug fixes”`
+    - `git merge <OTHER_BRANCH> -m “bring in Lamya's bug fixes”`
 1. Make changes to file (`facilitation_guide.md`)
 1. Add those changes to the to-be-committed list
-  - `git add facilitation_guide.md`
+    - `git add facilitation_guide.md`
 1. Write new commit message for clarity, accountability, and easy fixes if something breaks. Use a meaningful commit message, like this example.
-  - `git commit -m “finished writing the camp facilitation guide!”`
+    - `git commit -m “finished writing the camp facilitation guide!”`
 1. Push all your changes from local to remote
-  - `git push`
+    - `git push`
 
 
 #### Pull requests
 Many teams don't like when members push directly to `master`, so they either ask (or force) their members to submit pull requests (called merge requests by GitLab) in order to update the `master` branch. They may do this to make sure changes are necessary, working, or reviewed by a PM or someone. 
 1. After you push to your remote branch, navigate to your repo
 1. Next step depends on your site:
-  - GitHub:
-    - "Pull requests"
-    - Under the repo name near the top of the page
-  - GitLab:
-    - "Merge Requests"
-    - About 1/3 of the way down the sidebar on the left
+    - GitHub:
+        - "Pull requests"
+        - Under the repo name near the top of the page
+    - GitLab:
+        - "Merge Requests"
+        - About 1/3 of the way down the sidebar on the left
 
 
 ### Forking
