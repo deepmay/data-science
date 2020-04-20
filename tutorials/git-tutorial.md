@@ -4,11 +4,11 @@ By Audrey Beard
 Contents:
 1. [What's Git, and why use it?](#whats-git-and-why-use-it)
 1. [Using it](#using-it)
-  1. [Prerequisites](#prerequisites)
-  1. [Overview](#overview)
-  1. [If you're working on your own project](#if-youre-working-on-your-own-project)
-  1. [If you're working on a team](#if-youre-working-on-a-team)
-  1. [Forking](#forking)
+    1. [Prerequisites](#prerequisites)
+    1. [Overview](#overview)
+    1. [If you're working on your own project](#if-youre-working-on-your-own-project)
+    1. [If you're working on a team](#if-youre-working-on-a-team)
+    1. [Forking](#forking)
 1. [Fixing Things](#fixing-things)
 1. [Best Practices](#best-practices)
 
