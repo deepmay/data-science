@@ -1,6 +1,17 @@
 # Learning to use Git effectively
 By Audrey Beard
 
+Contents:
+1. [What's Git, and why use it?](#whats-git-and-why-use-it)
+1. [Using it](#using-it)
+  1. [Prerequisites](#prerequisites)
+  1. [Overview](#overview)
+  1. [If you're working on your own project](#if-youre-working-on-your-own-project)
+  1. [If you're working on a team](#if-youre-working-on-a-team)
+  1. [Forking](#forking)
+1. [Fixing Things](#fixing-things)
+1. [Best Practices](#best-practices)
+
 ## What's Git, and why use it?
 Git is a version control system, or VCS. If you've used G--gle Docs before and
 looked at the "Version History" of a document, you've seen version control in
@@ -64,7 +75,7 @@ Unless otherwise noted, every time you see a command like `this`, you should
 put it into a terminal verbatim, based on the use case. Placeholders look
 `<LIKE_THIS>` and should be replaced with whatever specific thing you're doing.
 
-### If you're backing up your own project
+### If you're working on your own project
 If you're backing up your own project, you might not need different branches at
 all - I'll assume that's the case here. If you'd like to learn more about
 branches, check out the section about [working on a team](#if-youre-working-on-a-team).
