@@ -24,7 +24,7 @@ If you're here, you probably see the value in Git (and a Git-oriented site), but
 Before starting this tutorial, you'll need a few things:
 - A GitHub or GitLab account
 - EITHER:
-  a. A computer terminal pulled up and Git installed:
+  1. A computer terminal pulled up and Git installed:
     - Protip: You can check if a program `X` is installed with `which X`, which
       should return something like `/usr/bin/git` on Mac or Linux, so you could
       do `which brew` and `which git` to check if you have either installed.
@@ -42,7 +42,7 @@ Before starting this tutorial, you'll need a few things:
       - Open the WSL app (might also be called "bash")
       - Install Git (if you don't have it):
           - `sudo apt install git`
-  a. [GitHub Desktop](https://desktop.github.com/) 
+  1. [GitHub Desktop](https://desktop.github.com/) 
     - This makes it easy to use Git if you're not interested in using the command line, or if you prefer graphical user interfaces (GUI's)
     - TODO
 
