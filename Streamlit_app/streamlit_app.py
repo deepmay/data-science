@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 from langchain.llms import OpenAI
 st.set_page_config(page_title="ML for Monsters Quick LLM App")
