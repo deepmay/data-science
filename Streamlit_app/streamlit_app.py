@@ -4,14 +4,12 @@ from langchain.llms import OpenAI
 st.set_page_config(page_title="ML for Monsters Quick LLM App")
 st.title('ML for Monsters Quick LLM App')
 
-st.write("Key", st.secrets["xyz"])
-
 st.write(
     "Has environment variables been set:",
     os.environ["key"] == st.secrets["xyz"],
 )
 
-openai_api_key = os.environ["key"]
+openai_api_key = st.secrets["xyz"]
 
 def generate_response(input_text):
   llm = OpenAI(temperature=0.7, openai_api_key=openai_api_key)
