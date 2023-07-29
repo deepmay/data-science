@@ -4,10 +4,7 @@ from langchain.llms import OpenAI
 st.set_page_config(page_title="ML for Monsters Quick LLM App")
 st.title('ML for Monsters Quick LLM App')
 
-st.write(
-    "Has environment variables been set:",
-    os.environ["key"] == st.secrets["xyz"],
-)
+# st.write(os.environ["key"] == st.secrets["xyz"])
 
 openai_api_key = st.secrets["xyz"]
 
