@@ -1,9 +1,16 @@
 import streamlit as st
 from langchain.llms import OpenAI
-st.set_page_config(page_title="DeepMay Quick & Dirty LLM")
-st.title('DeepMay Quick & Dirty LLM')
+st.set_page_config(page_title="ML for Monsters Quick LLM App")
+st.title('ML for Monsters Quick LLM App')
 
-openai_api_key = st.sidebar.text_input('OpenAI API Key')
+st.write("Key", st.secrets["xyz"])
+
+st.write(
+    "Has environment variables been set:",
+    os.environ["key"] == st.secrets["xyz"],
+)
+
+openai_api_key = os.environ["key"]
 
 def generate_response(input_text):
   llm = OpenAI(temperature=0.7, openai_api_key=openai_api_key)
